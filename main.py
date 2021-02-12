@@ -25,8 +25,13 @@ def steps(tall, number_of_steps):
     t.forward(tall)
 
 
+def carre(tall):
+    for i in range(0, 5):
+        leftfor(tall)
+
+
 # calling steps function dynamically
 steps(40, 6)
-
+carre(30)
 
 turtle.done()
