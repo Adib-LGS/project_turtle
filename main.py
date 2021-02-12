@@ -25,13 +25,23 @@ def steps(tall, number_of_steps):
     t.forward(tall)
 
 
-def carre(tall):
+# function to create a square
+def square(tall):
     for i in range(0, 5):
         leftfor(tall)
 
 
+# function to create a squares in square
+def squares(starting_tall, numbers_of_squares):
+    for i in range(1, numbers_of_squares):
+        tall = i * starting_tall
+        square(tall)
+
+
 # calling steps function dynamically
 steps(40, 6)
-carre(30)
+square(30)
+squares(10, 10)
+
 
 turtle.done()
